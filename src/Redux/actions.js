@@ -20,7 +20,7 @@ export const removeRegion = (index) => {
 
 const loginUser = (User) => {
   return function (dispatch) {
-    fetch("http://localhost:4000/auth/login", {
+    fetch("/auth/login", {
       method: "POST",
       body: JSON.stringify(User),
       headers: {
@@ -57,7 +57,7 @@ const userAdded = (data) => {
 };
 const setUser = (User) => {
   return function (dispatch) {
-    fetch("http://localhost:4000/auth/signup", {
+    fetch("/auth/signup", {
       method: "POST",
       body: JSON.stringify(User),
       headers: {

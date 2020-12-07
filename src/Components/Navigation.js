@@ -58,13 +58,7 @@ const Navigation = (props) => {
             </li>
             <li className="nav-list-item">
               {document.cookie !== "loggedIn=true" && (
-                <Button
-                  onClick={() => {
-                    window.location.replace("/login");
-                  }}
-                >
-                  Login
-                </Button>
+                 <Link to={"/login"}>Login</Link>
               )}
             </li>
           </ul>
